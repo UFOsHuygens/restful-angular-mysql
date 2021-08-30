@@ -1,0 +1,6 @@
+<div *ngFor="let c of tarefas">
+        <div ngClass="tarefa-layout">
+                <div ngClass="tarefa-barra flex-center">{{ c.nome }}</div>
+                <button type="button" (click)="excluirTarefa(c.id)" ngClass="btn btn-danger w-25 text-uppercase">excluir</button>
+        </div>
+</div>
